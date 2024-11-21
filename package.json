@@ -1,8 +1,8 @@
 {
-  "name": "express",
+  "name": "botanique",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "test task for biocad",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "run":  "node app.js"
