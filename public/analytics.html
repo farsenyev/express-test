@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analytics</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/new-logo.svg" alt="project logo">
+        </div>
+        <nav>
+            <a href='/'>ГЛАВНАЯ</a>
+            <a href='/analytics' class="active">АНАЛИТИКА</a>
+        </nav>
+        <div class="profile">
+            <img src="./img/ava40-2.svg" alt="avatar">
+        </div>
+    </header>
+    <main class="analytics-main">
+        <div class="card-top">
+            <img src="./img/unknown-device.svg" alt="device logo" class="analytics-img">
+            <div class="analytics-card-name">
+                <p class="analytics-card-name-title">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</p>
+                <div class="analytics-card-name-subtitle">
+                    <p class="analytics-card-name-status">S1.4.I14-9.001</p>
+                    <img src="./img/point.svg" alt="point" class="point">
+                    <p class="analytics-card-name-status">00-024004</p>
+                </div>
+            </div>
+            <div class="analytics-action">
+                <select name="" id="1" class="analytics-action-select">
+                    <option value="in work" selected>В работе</option>
+                    <option value="free">Свободен</option>
+                </select>
+                <img src="./img/favorite.svg" alt=like"" class="analytics-action-img">
+                <img src="./img/settings.svg" alt="settings" class="analytics-action-img">
+            </div>
+        </div>
+        <div class="select-and-action">
+            <select name="" id="2" class="select-and-action-select">
+                <option value="device work" selected>Работа прибора</option>
+            </select>
+            <div class="select-and-action-action">
+                <button class="select-and-action-alarm">
+                    <img src="./img/alarm.svg" alt="alarm">
+                </button>
+                <button class="select-and-action-save">
+                    <p class="select-and-action-save-text">СОХРАНИТЬ PDF</p>
+                    <img src="./img/dots.svg" alt="dots" class="select-and-action-save-dots">
+                </button>
+            </div>
+        </div>
+        <div class="date-time">
+            <div class="date-container">
+                <input type="datetime-local" class="date-input" value="2021-10-07T10:55">
+                <img src="./img/arrow.svg" alt="arrow" class="date-img">
+                <input type="datetime-local" class="date-input" value="2021-10-21T10:55">
+            </div>
+        </div>
+        <div class="time-chips">
+            <div class="chips">
+                <div class="chip-item">
+                    <p class="chip-text">День</p>
+                </div>
+                <div class="chip-item">
+                    <p class="chip-text">Неделя</p>
+                </div>
+                <div class="chip-item active-chip">
+                    <p class="chip-text">2 недели</p>
+                </div>
+                <div class="chip-item">
+                    <p class="chip-text">Месяц</p>
+                </div>
+                <div class="chip-item">
+                    <p class="chip-text">3 месяца</p>
+                </div>
+                <div class="chip-item">
+                    <p class="chip-text">Полгода</p>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            <table class="table-container">
+                <thead>
+                    <tr class="table-title">
+                    <th>
+                        <p class="table-head-title">Начало</p>
+                    </th>
+                    <th>
+                        <p class="table-head-title">Тип работ</p>
+                    </th>
+                    <th>
+                        <p class="table-head-title">Работы</p>
+                    </th>
+                    <th>
+                        <p class="table-head-title">Результат</p>
+                    </th>
+                    <th>
+                        <p class="table-head-title">Пользователь</p>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-row">
+                        <td class="table-date">
+                            <p>09.10.2021, 15:46</p>
+                        </td>
+                        <td class="table-work-type">
+                            <p class="table-work-status">В работе</p>
+                            <p class="table-work-spec">Измерение</p>
+                        </td>
+                        <td class="table-work">
+                            <p class="table-work-id"><b>Образец/серия:</b> 000100057935_170000010325_0000251849</p>
+                        </td>
+                        <td class="table-res">
+                            <p class="table-res-text"></p>
+                            <img src="./img/check.svg" alt="check" class="table-res-img">
+                        </td>
+                        <td class="table-user">
+                            <p>morozovava</p>
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="table-date">
+                            <p>12.10.2021, 12:17</p>
+                        </td>
+                        <td class="table-work-type">
+                            <p class="table-work-status">В работе</p>
+                            <p class="table-work-spec">Калибровка</p>
+                        </td>
+                        <td class="table-work">
+                            <p class="table-work-id"><b>Номер колонки:</b> Колонка 2<br>
+                                <b>Образец:</b> Образец 2<br>
+                                <b>Образец:</b> образец 1<br>
+                                <b>Метод:</b> метов тестовый<br>
+                                <b>Номер колонки:</b> Колонка 1
+                            </p>
+                        </td>
+                        <td class="table-res">
+                            <p class="table-res-text">Промывка с указанием вещества: Вещество <br>...
+                                Комментарий:
+                                тест успешности
+                            </p>
+                            <img src="./img/check.svg" alt="check" class="table-res-img">
+                        </td>
+                        <td class="table-user">
+                            <p>morozovava</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
