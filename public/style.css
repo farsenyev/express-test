@@ -68,7 +68,7 @@ a{
 }
 
 .search-input{
-    background: url("../img/qr_code_scanner-24px.svg") no-repeat 98%;
+    background: url("qr_code_scanner-24px.svg") no-repeat 98%;
     background-size: 24px;
     height: 56px;
     width: 936px;
