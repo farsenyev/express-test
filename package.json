@@ -2,10 +2,10 @@
   "name": "botanique",
   "version": "1.0.0",
   "description": "test task for biocad",
-  "main": "app.js",
+  "main": "/api/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node app.js",
+    "run": "node api/index.js",
     "deploy": "gh-pages -d ./public -e botanique"
   },
   "author": "",

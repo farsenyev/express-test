@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Analytics</title>
     <link rel="stylesheet" href="/style/style.css">
+    <script src="/script/scriptAnalytics.js"></script>
 </head>
 <body>
     <header>
@@ -19,25 +20,7 @@
         </div>
     </header>
     <main class="analytics-main">
-        <div class="card-top">
-            <img src="/img/unknown-device.svg" alt="device logo" class="analytics-img">
-            <div class="analytics-card-name">
-                <p class="analytics-card-name-title">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</p>
-                <div class="analytics-card-name-subtitle">
-                    <p class="analytics-card-name-status">S1.4.I14-9.001</p>
-                    <img src="/img/point.svg" alt="point" class="point">
-                    <p class="analytics-card-name-status">00-024004</p>
-                </div>
-            </div>
-            <div class="analytics-action">
-                <select name="" id="1" class="analytics-action-select">
-                    <option value="in work" selected>В работе</option>
-                    <option value="free">Свободен</option>
-                </select>
-                <img src="/img/favorite.svg" alt=like"" class="analytics-action-img">
-                <img src="/img/settings.svg" alt="settings" class="analytics-action-img">
-            </div>
-        </div>
+        <div class="card-top" id="card-title"></div>
         <div class="select-and-action">
             <select name="" id="2" class="select-and-action-select">
                 <option value="device work" selected>Работа прибора</option>
@@ -52,13 +35,7 @@
                 </button>
             </div>
         </div>
-        <div class="date-time">
-            <div class="date-container">
-                <input type="datetime-local" class="date-input" value="2021-10-07T10:55">
-                <img src="/img/arrow.svg" alt="arrow" class="date-img">
-                <input type="datetime-local" class="date-input" value="2021-10-21T10:55">
-            </div>
-        </div>
+        <div class="date-time" id="date"></div>
         <div class="time-chips">
             <div class="chips">
                 <div class="chip-item">
@@ -81,76 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="table">
-            <table class="table-container">
-                <thead>
-                    <tr class="table-title">
-                    <th>
-                        <p class="table-head-title">Начало</p>
-                    </th>
-                    <th>
-                        <p class="table-head-title">Тип работ</p>
-                    </th>
-                    <th>
-                        <p class="table-head-title">Работы</p>
-                    </th>
-                    <th>
-                        <p class="table-head-title">Результат</p>
-                    </th>
-                    <th>
-                        <p class="table-head-title">Пользователь</p>
-                    </th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr class="table-row">
-                        <td class="table-date">
-                            <p>09.10.2021, 15:46</p>
-                        </td>
-                        <td class="table-work-type">
-                            <p class="table-work-status">В работе</p>
-                            <p class="table-work-spec">Измерение</p>
-                        </td>
-                        <td class="table-work">
-                            <p class="table-work-id"><b>Образец/серия:</b> 000100057935_170000010325_0000251849</p>
-                        </td>
-                        <td class="table-res">
-                            <p class="table-res-text"></p>
-                            <img src="/img/check.svg" alt="check" class="table-res-img">
-                        </td>
-                        <td class="table-user">
-                            <p>morozovava</p>
-                        </td>
-                    </tr>
-                    <tr class="table-row">
-                        <td class="table-date">
-                            <p>12.10.2021, 12:17</p>
-                        </td>
-                        <td class="table-work-type">
-                            <p class="table-work-status">В работе</p>
-                            <p class="table-work-spec">Калибровка</p>
-                        </td>
-                        <td class="table-work">
-                            <p class="table-work-id"><b>Номер колонки:</b> Колонка 2<br>
-                                <b>Образец:</b> Образец 2<br>
-                                <b>Образец:</b> образец 1<br>
-                                <b>Метод:</b> метов тестовый<br>
-                                <b>Номер колонки:</b> Колонка 1
-                            </p>
-                        </td>
-                        <td class="table-res">
-                            <p class="table-res-text">Промывка с указанием вещества: Вещество <br>...
-                                Комментарий:
-                                тест успешности
-                            </p>
-                            <img src="/img/check.svg" alt="check" class="table-res-img">
-                        </td>
-                        <td class="table-user">
-                            <p>morozovava</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="table" id="table">
         </div>
     </main>
 </body>
